@@ -1,8 +1,8 @@
 # Text Classification Using Naive Bayes
 
-## Project Overview
+## Overview
 
-This project implements a Text Classification system using the Multinomial Naive Bayes algorithm. The model classifies SMS messages as either Spam or Ham (Not Spam).
+This project implements a Text Classification system using the Multinomial Naive Bayes algorithm to classify SMS messages as Spam or Ham (Not Spam).
 
 ## Dataset
 
@@ -16,13 +16,12 @@ SMS Spam Collection Dataset
 
 * Python
 * Pandas
-* NumPy
-* Scikit-Learn
 * NLTK
+* Scikit-Learn
 * Matplotlib
 * Seaborn
 
-## Project Workflow
+## Workflow
 
 1. Data Collection
 2. Data Cleaning
@@ -31,28 +30,34 @@ SMS Spam Collection Dataset
 5. Train-Test Split
 6. Naive Bayes Training
 7. Model Evaluation
-8. Custom Prediction
+8. Spam Prediction
 
-## Evaluation Metrics
+## Model Performance
 
 * Accuracy: 97.49%
-* Precision: 100%
+* Precision: 100.00%
 * Recall: 81.33%
 * F1 Score: 89.71%
 
-## Outputs
+## Output Files
 
-* Confusion Matrix
-* Trained Model (.pkl)
-* TF-IDF Vectorizer (.pkl)
+* confusion_matrix.png
+* model.pkl
+* vectorizer.pkl
 
-## How to Run
+## Run Project
 
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
 
-## Author
+## Sample Prediction
 
-Internship Project - Text Classification using Naive Bayes
+Input:
+
+Congratulations! You have won a free iPhone.
+
+Output:
+
+Prediction: SPAM
